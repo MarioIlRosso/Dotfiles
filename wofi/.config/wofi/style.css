@@ -1,29 +1,29 @@
 #window {
-	/* border-radius: 30px; */
-	border: 3px solid #FF0000;
-	background-color: rgba(--wofi-rgb-color1, 1.0);
-	font-size: 18px;
-	font-family: "JetBrainsMono Nerd Font Mono";
+    /* border-radius: 30px; */
+    border: 3px solid #FF0000;
+    background-color: rgba(--wofi-rgb-color1, 1.0);
+    font-size: 18px;
+    font-family: "JetBrainsMono Nerd Font Mono";
 }
 
 #input {
-	border: 1px;
-	border-radius: 10px;
-	background-color: transparent;
-	color: --wofi-color0;
-	margin: 3px;
+    border: 1px;
+    border-radius: 10px;
+    background-color: transparent;
+    color: --wofi-color0;
+    margin: 3px;
 }
 
 #outer-box {
-	margin: 3px;
+    margin: 3px;
 }
 
 #input image:first-child {
-	margin-left: -100px;
+    margin-left: -100px;
 }
 
 #input image:last-child {
-	margin-right: -100px;
+    margin-right: -100px;
 }
 
 /* #input:focus { */
@@ -31,24 +31,28 @@
 /* } */
 
 #entry {
-	color: --wofi-color0;
+    color: --wofi-color0;
 }
 
+/* Hover and selection states: Black background, Red text */
+#entry:hover, 
 #entry:selected {
-	background-color: rgba(--wofi-rgb-color0, 0.94);
+    background-color: #000000;
+    color: #FF0000;
 }
 
+#text:hover, 
 #text:selected {
-	color: --wofi-color1;
+    color: #FF0000;
 }
 
 #img {
-	margin-right: 5px;
-	margin-left: 3px;
-	margin-top: 3px;
-	margin-bottom: 3px;
+    margin-right: 5px;
+    margin-left: 3px;
+    margin-top: 3px;
+    margin-bottom: 3px;
 }
 
 #text {
-	margin-left: 3px;
+    margin-left: 3px;
 }
