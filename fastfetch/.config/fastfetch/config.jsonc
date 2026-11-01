@@ -6,127 +6,153 @@
 //  | || (_| \__ \ |_| ||  __/ || (__| | | |
 //  |_| \__,_|___/\__|_| \___|\__\___|_| |_|  Arch
 //
-//  by Sofiya
+//  by TheC00lest
 
 {
-  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
-  "logo": {
-    "color": {"1": "white", "2": "cyan"},
-    "source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/png/\" -name \"*.png\" | shuf -n 1)",
+	"$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+	"logo": {
+		"color": {
+			"1": "red",
+			"2": "red"
+		},
+		"source": "$(find \"${XDG_CONFIG_HOME:-$HOME/.config}/fastfetch/png/\" -name \"*.png\" | shuf -n 1)",
 //    "source": "$HOME/.config/fastfetch/ascii/rose.txt",
-    "padding": {
-      "top": 1,
-      "right": 5
-    },
-    "height": 18
-  },
-  "display": {
-    "separator": " ▸ " // :
-  },
-"modules": [
-  {
-    "type": "title"
-  },
-"break",
-{
-  "type": "custom",
-  "format": "╭─── System info"
+"padding": {
+	"top": 1,
+	"right": 5
 },
-{
-  "type": "os",
-  "key": "",
-  "keycolor": "white"
-},
-{
-  "type": "kernel",
-  "key": "",
-  "keycolor": "red"
-},
-{
-  "type": "de",
-  "key": "",
-  "keycolor": "green"
-},
-{
-  "type": "wm",
-  "key": "",
-  "keycolor": "green"
-},
-{
-  "type": "packages",
-  "key": "",
-  "keycolor": "yellow"
-},
-{
-  "type": "custom",
-  "format": "╰───"
-},
-{
-  "type": "custom",
-  "format": "╭─── Hardware"
-},
-{
-  "type": "memory",
-  "key": "",
-  "keycolor": "blue"
-},
-{
-  "type": "host",
-  "key": "",
-  "keycolor": "blue"
-},
-{
-  "type": "cpu",
-  "key": "",
-  "keycolor": "blue"
-},
-{
-  "type": "gpu",
-  "key": "",
-  "keycolor": "magenta"
-},
-{
-  "type": "swap",
-  "key": "",
-  "keycolor": "magenta"
-},
-{
-  "type": "disk",
-  "key": "",
-  "keycolor": "red"
-},
-{
-  "type": "battery",
-  "key": "",
-  "keycolor": "red"
-},
-{
-  "type": "custom",
-  "format": "╰───"
-},
-{
-  "type": "custom",
-  "format": "╭─── Other"
-},
-{
-  "type": "uptime",
-  "key": "",
-  "keycolor": "yellow"
-},
-{
-  "type": "terminal",
-  "key": "",
-  "keycolor": "yellow"
-},
-{
-  "type": "locale",
-  "key": "",
-  "keycolor": "yellow"
-},
-{
-  "type": "custom",
-  "format": "╰───"
-},
-"break"
-]
+"height": 18
+	},
+	"display": {
+		"separator": " "
+	},
+	"modules": [
+		{
+			"type": "title",
+			"keyColor": "red",
+			"color": "red"
+		},
+		"break",
+		{
+			"type": "custom",
+			"format": "┌─── Other",
+			"outputColor": "red"
+		},
+		{
+			"type": "os",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "kernel",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "de",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "wm",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "packages",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "custom",
+			"format": "└───",
+			"outputColor": "red"
+		},
+		{
+			"type": "custom",
+			"format": "┌─── Other",
+			"outputColor": "red"
+		},
+		{
+			"type": "memory",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "host",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "cpu",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "gpu",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "swap",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "disk",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "battery",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "custom",
+			"format": "└───",
+			"outputColor": "red"
+		},
+		{
+			"type": "custom",
+			"format": "┌─── Other",
+			"outputColor": "red"
+		},
+		{
+			"type": "uptime",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "terminal",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "locale",
+			"key": "",
+			"keyColor": "red",
+			"outputColor": "white"
+		},
+		{
+			"type": "custom",
+			"format": "└───",
+			"outputColor": "red"
+		},
+		"break"
+	]
 }
